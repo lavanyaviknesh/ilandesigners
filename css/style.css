@@ -269,7 +269,7 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/sareewebp.webp);
-    height: 600px;
+    height: 700px;
     background-size: 100%;
     padding: 10px 0px 25px 0px;
     background-repeat: no-repeat;
@@ -819,10 +819,20 @@ a:hover {
 }
 
 .email_text {
-    width: 100%;
-    float: left;
+    width: 50%;
+    float: center;
     margin-top: 20px;
+    margin-left: 400px;
 }
+@media (max-width: 768px) {
+    .email_text {
+      width: 90%; /* Take up 90% of the screen width for mobile */
+      margin-left: auto;
+      margin-right: auto; /* Center it horizontally */
+      margin-top: 20px;
+      text-align: center; /* Center text inside the input fields */
+    }
+  }
 
 .email-bt {
     color: #080707;
